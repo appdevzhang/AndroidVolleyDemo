@@ -11,8 +11,8 @@ import appdevzhang.com.androidvolleydemo.net.RequestManager;
 import appdevzhang.com.androidvolleydemo.net.Url;
 
 /**
- * @ClassName:
- * @Description:TODO()
+ * @ClassName: ImageLoaderActivity
+ * @Description:
  * @author:appdevzhang
  * @email:zhangzhongkai@damaiapp.com
  * @date:15/8/26 下午4:20

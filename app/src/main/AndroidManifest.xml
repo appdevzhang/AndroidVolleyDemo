@@ -23,6 +23,7 @@
         <activity android:name=".ui.activity.JsonRequestActivity"/>
         <activity android:name=".ui.activity.ImageRequestActivity"/>
         <activity android:name=".ui.activity.ImageLoaderActivity"/>
+        <activity android:name=".ui.activity.NetwordImageViewActivity"/>
     </application>
 
 </manifest>

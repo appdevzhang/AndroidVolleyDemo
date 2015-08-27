@@ -37,6 +37,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.bt_json_request).setOnClickListener(this);
         findViewById(R.id.bt_image_request).setOnClickListener(this);
         findViewById(R.id.bt_image_loader).setOnClickListener(this);
+        findViewById(R.id.bt_network_imageview).setOnClickListener(this);
         findViewById(R.id.bt_request_clear).setOnClickListener(this);
 
     }
@@ -77,6 +78,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.bt_image_loader:
                 NextPage(ImageLoaderActivity.class,false);
+                break;
+            case R.id.bt_network_imageview:
+                NextPage(NetwordImageViewActivity.class,false);
                 break;
             case R.id.bt_request_clear:
                 break;
