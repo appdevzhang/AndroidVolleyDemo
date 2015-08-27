@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".ui.activity.ImageloaderActivity"/>
         <activity android:name=".ui.activity.StringRequestActivity"/>
+        <activity android:name=".ui.activity.JsonRequestActivity"/>
     </application>
 
 </manifest>

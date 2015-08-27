@@ -11,7 +11,7 @@ import java.io.Serializable;
  */
 public class Url implements Serializable {
     public static final String STRINGREQUESTURL = "http://www.baidu.com";
-    public static final String JSONREQUESTURL = "";
+    public static final String JSONREQUESTURL = "http://m.weather.com.cn/atad/101010100.html";
     public static final String IMAGEREQUESTURL = "http://pic.miercn.com/uploads/allimg/150824/104-150R4135319.jpg";
     public static final String XMLREQUESTURL = "";
 

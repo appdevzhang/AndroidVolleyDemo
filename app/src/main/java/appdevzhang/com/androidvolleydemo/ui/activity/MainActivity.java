@@ -1,6 +1,5 @@
 package appdevzhang.com.androidvolleydemo.ui.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -68,11 +67,10 @@ public class MainActivity extends BaseActivity {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bt_string_request:
-//                NextPage(StringRequestActivity.class,false);
-                Intent intent = new Intent(MainActivity.this,StringRequestActivity.class);
-                startActivity(intent);
+                NextPage(StringRequestActivity.class,false);
                 break;
             case R.id.bt_json_request:
+                NextPage(JsonRequestActivity.class,false);
                 break;
             case R.id.bt_image_request:
                 break;
