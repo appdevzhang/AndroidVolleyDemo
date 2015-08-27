@@ -1,4 +1,4 @@
-package appdevzhang.com.androidvolleydemo;
+package appdevzhang.com.androidvolleydemo.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 
-import appdevzhang.com.androidvolleydemo.net.BitmapCache;
+import appdevzhang.com.androidvolleydemo.R;
 
 /**
  * @ClassName:
@@ -29,12 +29,10 @@ public class ImageloaderActivity extends Activity{
         nivLoader = (NetworkImageView) findViewById(R.id.niv_loader_result);
         RequestQueue mQueue = Volley.newRequestQueue(getApplicationContext());
 
-        ImageLoader imageLoader = new ImageLoader(mQueue, new BitmapCache());
+//        ImageLoader imageLoader = new ImageLoader(mQueue, new BitmapLruCache());
 
         ImageLoader.ImageListener listener = ImageLoader.getImageListener(ivLoader,R.drawable.ic_launcher, R.drawable.ic_launcher);
-        imageLoader.get("http://pic.miercn.com/uploads/allimg/150824/104-150R4135319.jpg", listener);
         nivLoader.setDefaultImageResId(R.mipmap.ic_launcher);
         nivLoader.setErrorImageResId(R.mipmap.ic_launcher);
-        nivLoader.setImageUrl("http://pic.miercn.com/uploads/allimg/150824/104-150R4135319.jpg",imageLoader);
     }
 }

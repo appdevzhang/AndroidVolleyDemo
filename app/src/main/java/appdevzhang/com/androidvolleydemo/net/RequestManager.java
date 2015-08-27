@@ -3,6 +3,7 @@ package appdevzhang.com.androidvolleydemo.net;
 import android.app.ActivityManager;
 import android.content.Context;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
@@ -39,4 +40,23 @@ public class RequestManager {
         }
     }
 
+    public static void addRequest(Request<?> request,Object tag){
+        if(tag != null)
+            request.setTag(tag);
+
+        requestQueue.add(request);
+
+    }
+
+    public static void cancelAll(Object tag){
+        requestQueue.cancelAll(tag);
+    }
+
+    public static ImageLoader getImageLoader(){
+        if(imageLoader != null){
+            return imageLoader;
+        }else {
+            throw new IllegalStateException("ImageLoader not initialized");
+        }
+    }
 }
