@@ -17,7 +17,7 @@ import appdevzhang.com.androidvolleydemo.net.Url;
  * @email:zhangzhongkai@damaiapp.com
  * @date:15/8/26 下午4:20
  */
-public class iiii extends BaseActivity{
+public class ImageLoaderActivity extends BaseActivity{
     private ImageView ivResult;
     private ImageLoader imageLoader;
     private ImageLoader.ImageListener imageListener;
