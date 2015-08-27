@@ -1,4 +1,4 @@
-package appdevzhang.com.androidvolleydemo;
+package appdevzhang.com.androidvolleydemo.ui.activity;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -22,6 +22,9 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
+
+import appdevzhang.com.androidvolleydemo.net.BitmapCache;
+import appdevzhang.com.androidvolleydemo.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private RequestQueue mQueue;
