@@ -73,9 +73,10 @@ public class MainActivity extends BaseActivity {
                 NextPage(JsonRequestActivity.class,false);
                 break;
             case R.id.bt_image_request:
+                NextPage(ImageRequestActivity.class,false);
                 break;
             case R.id.bt_image_loader:
-
+                NextPage(ImageLoaderActivity.class,false);
                 break;
             case R.id.bt_request_clear:
                 break;

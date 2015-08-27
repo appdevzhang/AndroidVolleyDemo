@@ -19,9 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.ImageloaderActivity"/>
         <activity android:name=".ui.activity.StringRequestActivity"/>
         <activity android:name=".ui.activity.JsonRequestActivity"/>
+        <activity android:name=".ui.activity.ImageRequestActivity"/>
+        <activity android:name=".ui.activity.ImageLoaderActivity"/>
     </application>
 
 </manifest>

@@ -14,7 +14,6 @@ import com.android.volley.toolbox.ImageLoader;
  */
 public class BitmapLruCache extends LruCache<String,Bitmap> implements ImageLoader.ImageCache{
 
-    LruCache<String,Bitmap> lruCache ;
 
     public BitmapLruCache(int maxSize) {
         super(maxSize);
@@ -27,11 +26,11 @@ public class BitmapLruCache extends LruCache<String,Bitmap> implements ImageLoad
 
     @Override
     public Bitmap getBitmap(String url) {
-        return lruCache.get(url);
+        return get(url);
     }
 
     @Override
     public void putBitmap(String url, Bitmap bitmap) {
-        lruCache.put(url,bitmap);
+        put(url,bitmap);
     }
 }
