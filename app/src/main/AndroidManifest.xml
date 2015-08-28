@@ -24,6 +24,7 @@
         <activity android:name=".ui.activity.ImageRequestActivity"/>
         <activity android:name=".ui.activity.ImageLoaderActivity"/>
         <activity android:name=".ui.activity.NetwordImageViewActivity"/>
+        <activity android:name=".ui.activity.XMLRequestActivity"/>
     </application>
 
 </manifest>

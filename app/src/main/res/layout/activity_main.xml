@@ -41,8 +41,10 @@
         android:text="@string/network_imageview" />
 
     <Button
+        android:id="@+id/bt_xml_request"
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:text="@string/xml_request"
+        android:layout_height="40dp" />
 
     <Button
         android:id="@+id/bt_request_clear"

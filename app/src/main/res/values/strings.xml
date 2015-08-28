@@ -9,6 +9,7 @@
     <string name="image_request">Image Request</string>
     <string name="image_loader">Image Loader</string>
     <string name="network_imageview">Network ImageView</string>
+    <string name="xml_request">XML Request</string>
     <string name="result_clear">Clear</string>
 
 </resources>

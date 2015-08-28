@@ -1,5 +1,6 @@
 package appdevzhang.com.androidvolleydemo.ui.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,30 +15,20 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 
 import appdevzhang.com.androidvolleydemo.R;
+import appdevzhang.com.androidvolleydemo.net.XMLRequest;
 
 public class MainActivity extends BaseActivity {
-    private RequestQueue mQueue;
-    private TextView tvResult;
-    private ImageView ivResult;
-    private NetworkImageView nivResut;
-    public static String url = "http://www.baidu.com";
-    public static String jsonUrl = "http://m.weather.com.cn/atad/101010100.html";
-    public static String imageUrl = "http://pic.miercn.com/uploads/allimg/150824/104-150R4135319.jpg";
-    ImageRequest imageRequest;
-    ImageLoader imageLoader;
-    ImageLoader.ImageListener imageListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tvResult = (TextView) findViewById(R.id.tv_request_result);
-        mQueue = Volley.newRequestQueue(this);
         findViewById(R.id.bt_string_request).setOnClickListener(this);
         findViewById(R.id.bt_json_request).setOnClickListener(this);
         findViewById(R.id.bt_image_request).setOnClickListener(this);
         findViewById(R.id.bt_image_loader).setOnClickListener(this);
         findViewById(R.id.bt_network_imageview).setOnClickListener(this);
+        findViewById(R.id.bt_xml_request).setOnClickListener(this);
         findViewById(R.id.bt_request_clear).setOnClickListener(this);
 
     }
@@ -81,6 +72,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.bt_network_imageview:
                 NextPage(NetwordImageViewActivity.class,false);
+                break;
+            case R.id.bt_xml_request:
+                NextPage(XMLRequestActivity.class,false);
                 break;
             case R.id.bt_request_clear:
                 break;
