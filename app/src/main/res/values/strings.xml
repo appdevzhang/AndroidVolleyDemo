@@ -10,6 +10,7 @@
     <string name="image_loader">Image Loader</string>
     <string name="network_imageview">Network ImageView</string>
     <string name="xml_request">XML Request</string>
+    <string name="gson_request">Gson Request</string>
     <string name="result_clear">Clear</string>
 
 </resources>

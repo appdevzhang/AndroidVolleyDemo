@@ -47,6 +47,12 @@
         android:layout_height="40dp" />
 
     <Button
+        android:id="@+id/bt_gson_request"
+        android:layout_width="match_parent"
+        android:text="@string/gson_request"
+        android:layout_height="40dp" />
+
+    <Button
         android:id="@+id/bt_request_clear"
         android:layout_width="match_parent"
         android:layout_height="40dp"

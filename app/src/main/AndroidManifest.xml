@@ -25,6 +25,7 @@
         <activity android:name=".ui.activity.ImageLoaderActivity"/>
         <activity android:name=".ui.activity.NetwordImageViewActivity"/>
         <activity android:name=".ui.activity.XMLRequestActivity"/>
+        <activity android:name=".ui.activity.GsonRequestActivity"/>
     </application>
 
 </manifest>
