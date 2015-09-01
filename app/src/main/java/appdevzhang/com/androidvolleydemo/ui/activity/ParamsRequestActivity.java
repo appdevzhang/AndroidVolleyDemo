@@ -44,6 +44,7 @@ public class ParamsRequestActivity extends BaseActivity {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bt_params_request:
+                executeRequest(mStringRequest);
                 break;
             default:
                 break;

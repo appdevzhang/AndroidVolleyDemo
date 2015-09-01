@@ -8,6 +8,8 @@ import com.android.volley.Response;
 
 import appdevzhang.com.androidvolleydemo.R;
 import appdevzhang.com.androidvolleydemo.bean.Wheather;
+import appdevzhang.com.androidvolleydemo.net.GsonRequest;
+import appdevzhang.com.androidvolleydemo.net.Url;
 
 /**
  * @ClassName: GsonRequestActivity
@@ -32,7 +34,7 @@ public class GsonRequestActivity extends BaseActivity {
         super.onClick(v);
         switch (v.getId()){
             case R.id.bt_gson_request:
-
+                    executeRequest(new GsonRequest<Wheather>(Url.JSONREQUESTURL,Wheather.class,listener(),errorListener()));
                 break;
             default:
                 break;

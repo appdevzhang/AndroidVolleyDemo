@@ -18,6 +18,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.bt_network_imageview).setOnClickListener(this);
         findViewById(R.id.bt_xml_request).setOnClickListener(this);
         findViewById(R.id.bt_gson_request).setOnClickListener(this);
+        findViewById(R.id.bt_params_request).setOnClickListener(this);
         findViewById(R.id.bt_request_clear).setOnClickListener(this);
 
     }
@@ -46,7 +47,11 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_gson_request:
                 NextPage(GsonRequestActivity.class,false);
                 break;
+            case R.id.bt_params_request:
+                NextPage(ParamsRequestActivity.class,false);
+                break;
             case R.id.bt_request_clear:
+                this.finish();
                 break;
             default:
                 break;
