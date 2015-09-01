@@ -2,44 +2,48 @@ package appdevzhang.com.androidvolleydemo.ui.activity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
+import java.util.Map;
+
 import appdevzhang.com.androidvolleydemo.R;
+import appdevzhang.com.androidvolleydemo.net.ApiParams;
 import appdevzhang.com.androidvolleydemo.net.Url;
 
 /**
- * @ClassName: StringRequestActivity
+ * @ClassName:
  * @Description:
  * @author: appdevzhang
  * @email: 1160030655@qq.com
- * @date: 15/8/27 上午11:14
+ * @date: 15/9/1 上午9:06
  */
-public class StringRequestActivity extends BaseActivity{
-
-    private Button btStringRequest;
+public class ParamsRequestActivity extends BaseActivity {
     private TextView tvResult;
+    private StringRequest mStringRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_string_request);
-        btStringRequest = (Button) findViewById(R.id.bt_string_request);
-        btStringRequest.setOnClickListener(this);
+        setContentView(R.layout.activity_params_request);
         tvResult = (TextView) findViewById(R.id.tv_request_result);
-
+        findViewById(R.id.bt_params_request).setOnClickListener(this);
+        mStringRequest = new StringRequest(Request.Method.POST, Url.PARAMSREQUESTURL,listener(),errorListener()){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                return new ApiParams().with("param1","01").with("param2","02");
+            }
+        };
     }
 
     @Override
     public void onClick(View v) {
-        super.onClick(v);
         switch (v.getId()){
-            case R.id.bt_string_request:
-                executeRequest(new StringRequest(Request.Method.GET, Url.STRINGREQUESTURL,listener(),errorListener()));
+            case R.id.bt_params_request:
                 break;
             default:
                 break;
