@@ -21,6 +21,7 @@ proguard/
 # Gradle files
 .gradle/
 build/
+/*/build/
 
 # Log Files
 *.log
@@ -41,3 +42,6 @@ build/
 
 # Mac system files
 .DS_Store
+
+# TeXlipse plugin
+gradle.properties
