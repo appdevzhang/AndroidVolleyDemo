@@ -21,7 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f37d5f97-fd63-4c61-b951-271fe76aec64" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroidVolleyDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2049,7 +2049,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441185764411</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Complete all demo,i will improve it in the next time.">
+      <created>1441185855010</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1441185855010</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
